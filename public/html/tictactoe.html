@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes">
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/tictactoe.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div class="shade">
+        <div class="blackboard" data-attr="Player 0 | Computer ">
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../javascript/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../javascript/handlebars.js"></script>
+<script type="text/javascript" src="../javascript/tictactoe.js"></script>
+<script type="text/x-handlebars-template" id="displayXOrO-template">
+    <div class="x-or-o">
+        <input type="button" value="X" id="xBtn"/>
+        <input type="button" value="O" id="oBtn"/>
+    </div>
+</script>
+<script type="text/x-handlebars-template" id="displayLose-template">
+    <div class="lost" data-attr="Uh oh, you lost...">
+    </div>
+</script>
+<script type="text/x-handlebars-template" id="displayGrid-template">
+    <div id="playerTurn">
+        Your turn!
+    </div>
+    <div id="computerTurn">
+        Computer's turn!
+    </div>
+    <div id="board">
+        <div class="box" id="one" value="">
+            &nbsp;
+        </div>
+        <div class="box" id="two" value="">
+            &nbsp;
+        </div>
+        <div class="box" id="three" value="">
+            &nbsp;
+        </div>
+        <div class="box" id="four" value="">
+            &nbsp;
+        </div>
+        <div class="box" id="five" value="">
+            &nbsp;
+        </div>
+        <div class="box" id="six" value="">
+            &nbsp;
+        </div>
+        <div class="box" id="seven" value="">
+            &nbsp;
+        </div>
+        <div class="box" id="eight" value="">
+            &nbsp;
+        </div>
+        <div class="box" id="nine" value="">
+            &nbsp;
+        </div>
+    </div>
+</script>
+</html>
